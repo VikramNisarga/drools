@@ -460,6 +460,7 @@ public class SingleSessionCommandService
                     
                     internalProcessRuntime.clearProcessInstances();
                 }
+                if(ksession.getWorkItemManager() instanceof JPAWorkItemManager)
                 ((JPAWorkItemManager) ksession.getWorkItemManager()).clearWorkItems();
             }
             

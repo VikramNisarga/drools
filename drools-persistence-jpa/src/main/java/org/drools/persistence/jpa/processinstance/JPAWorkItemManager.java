@@ -205,4 +205,7 @@ public class JPAWorkItemManager implements WorkItemManager {
     public void clear() {
         clearWorkItems();
     }
+    public InternalKnowledgeRuntime getRuntime() {
+    	return this.kruntime;
+    }
 }
